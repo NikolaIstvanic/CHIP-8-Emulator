@@ -88,8 +88,9 @@ u_int8_t keys[NUM_KEYS];
  * CHIP-8 has stack which stores address stored in PC before a subroutine call
  * which is then restored after the call. This emulator supports 16 levels
  * within the stack, defined as STACK_BOUND
+ *
+ * Stack pointer points to first empty location on the stack.
  */
-/* Stack pointer: current location on stack */
 address* sp;
 
 /* Screen has 2K (2048) pixels (64 x 32). A pixel is either on (1) or off (0) */
