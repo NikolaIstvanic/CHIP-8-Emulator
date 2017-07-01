@@ -313,7 +313,7 @@ void run()
 	SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_SetVideoMode(EMU_W, EMU_H, BPP, SDL_HWSURFACE | SDL_DOUBLEBUF);
 
-	while (1) {
+	for (;;) {
 		if (SDL_PollEvent(&e)) {
 			continue;
 		}
